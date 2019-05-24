@@ -1,0 +1,16 @@
+{
+    "waveformLocations":[
+        {
+            "name":"obf8",
+            "type":"SeedLinkLocation",
+            "server_name":"195.156.118.66",
+            "priority":1 
+        },
+        {
+            "name":"wfdiscs",
+            "type":"CSSArchiveLocation",
+            "file_path":"/levy/ilmosalm/tietokantajutut/dummywfdiscs",
+            "priority":2
+        }
+    ]
+}
