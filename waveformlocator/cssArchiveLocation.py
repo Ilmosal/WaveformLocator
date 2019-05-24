@@ -6,7 +6,7 @@ import os
 from obspy.core.stream import Stream
 from obspy.core.stream import read
 
-from quakedaemon.waveformLocation import WaveformLocation
+from waveformlocator.waveformLocation import WaveformLocation
 
 class CSSArchiveLocation(WaveformLocation):
     def __init__(self, name, priority, file_path):

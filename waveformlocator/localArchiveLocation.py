@@ -5,7 +5,7 @@ import os
 
 from obspy.core.stream import Stream
 
-from quakedaemon.waveformLocation import WaveformLocation
+from waveformlocator.waveformLocation import WaveformLocation
 
 class LocalArchiveLocation(WaveformLocation):
     def __init__(self, name, priority, file_path):

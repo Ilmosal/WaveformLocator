@@ -3,9 +3,9 @@ import os
 
 from obspy.core.stream import Stream
 
-from quakedaemon.waveformLocation import WaveformLocation
-from quakedaemon.seedlinkLocation import SeedLinkLocation
-from quakedaemon.cssArchiveLocation import CSSArchiveLocation
+from waveformlocator.waveformLocation import WaveformLocation
+from waveformlocator.seedlinkLocation import SeedLinkLocation
+from waveformlocator.cssArchiveLocation import CSSArchiveLocation
 
 class WaveformLocator(object):
     """

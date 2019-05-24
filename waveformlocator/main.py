@@ -6,8 +6,8 @@ import time
 
 from obspy import UTCDateTime
 
-from quakedaemon.waveformLocator import WaveformLocator
-from quakedaemon.waveformRequest import WaveformRequest
+from waveformlocator.waveformLocator import WaveformLocator
+from waveformlocator.waveformRequest import WaveformRequest
 
 from nordb import getNordic
 

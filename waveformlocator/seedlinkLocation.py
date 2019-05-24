@@ -9,7 +9,7 @@ from obspy.clients.seedlink.easyseedlink import create_client
 from obspy.clients.seedlink.basic_client import Client
 from obspy.core.stream import Stream
 
-from quakedaemon.waveformLocation import WaveformLocation
+from waveformlocator.waveformLocation import WaveformLocation
 
 class SeedLinkLocation(WaveformLocation):
     def __init__(self, name, priority, server_name):
