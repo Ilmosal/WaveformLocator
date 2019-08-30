@@ -12,7 +12,8 @@ setup(
     description="Python library for fetching waveform data from various sources",
     install_requires=[
         "obspy",
-        "nordb"
+        "nordb",
+        "lxml"
     ],
     long_description=open("README.md").read(),
 )

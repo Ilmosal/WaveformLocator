@@ -43,8 +43,6 @@ class WaveformLocator(object):
         self.__waveform_locations = []
         self.__readConfig(location_config)
 
-        print(self.getStatus())
-
     def __readConfig(self, location_config):
         """
         Read location_config json file and initialize the waveform_locations

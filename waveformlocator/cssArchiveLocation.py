@@ -20,7 +20,9 @@ class CSSArchiveLocation(WaveformLocation):
         """
         streams = Stream()
         if self.__checkStatus() and event.waveform_h:
-            wfdisc_file = event.waveform_h[0].waveform_info.lower()[4:]
+            wfdisc_file_start_i = int(event.waveform_h[0].waveform_info.lower().find('.wfdisc'))
+            wfdisc_file = event.waveform_h[0].waveform_info.lower()[wfdisc_file_start_i-13:wfdisc_file_start_i+7]
+
             year = wfdisc_file[:4]
             yearjul = wfdisc_file[:7]
             if os.path.exists('{0}/{1}/{2}/{3}'.format(self.__file_path, year, yearjul, wfdisc_file)):
